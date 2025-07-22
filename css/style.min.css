@@ -26,8 +26,25 @@ body {
     opacity: .8;
     z-index: -1;
     background: #f12711;
-    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
-    background: linear-gradient(to right, #f5af19, #f12711); }
+    background: -webkit-linear-gradient(to right, #f5af19, #f3301b);
+    background: linear-gradient(to right, #f5af19, #f3301b);
+
+    /*background: #bdc3c7;
+    background: -webkit-linear-gradient(to right, #bdc3c7, #2c3e50);
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);*/
+
+    /*background: #2c3e50;
+    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);
+    background: linear-gradient(to right, #3498db, #2c3e50);*/
+
+    /*background: #667eea;
+    background: -webkit-linear-gradient(to right, #667eea, #764ba2);
+    background: linear-gradient(to right, #667eea, #764ba2);*/
+
+    /*background: #C9CCD3;
+    background: -webkit-linear-gradient(to right, #C9CCD3, #E2E2E2);
+    background: linear-gradient(to right, #C9CCD3, #E2E2E2);*/
+  }
 
 .boxed-page {
   margin: 0 auto;
@@ -122,8 +139,8 @@ a:hover {
   padding: .5rem; }
 
 .section-content {
-  padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-top: 36px;
+  padding-bottom: 36px; }
 
 .title-wrap,
 .section-title {
@@ -488,4 +505,103 @@ footer {
   .grid-item {
     width: 100%; }
   .card-deck {
-    flex-direction: column; } }
+    flex-direction: column; }
+}
+
+.card-body {
+  position: relative;
+  padding-bottom: 2.75rem;
+}
+
+.card-body .card-link {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: .75rem;
+}
+
+.portada-texto span:nth-child(1) {
+  color:#20e2f4;
+}.portada-texto span:nth-child(2) {
+  color:#fe7171;
+}.portada-texto span:nth-child(3) {
+  color:#17a2b8;
+}.portada-texto span:nth-child(4) {
+  color:#ffc107;
+}.portada-texto span:nth-child(5) {
+  color:#A16EFF;
+}
+
+.portada-texto span:nth-child(1),
+.portada-texto span:nth-child(2),
+.portada-texto span:nth-child(3),
+.portada-texto span:nth-child(4),
+.portada-texto span:nth-child(5) {
+  font-size: 96%;
+  background: rgba(0, 0, 0, 0.225);
+  border-radius: 10px;
+  padding: 0.2rem 0.85rem;
+}
+
+#gtco-general-knowledge .row .d-flex {
+  background: #f9f9f9;
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.badge-conocimientosapls {
+    font-size: 14px;
+    color: #333;
+}
+
+.badge-conocimientosapls h1,
+.badge-conocimientosapls h2,
+.badge-conocimientosapls h3,
+.badge-conocimientosapls h4,
+.badge-conocimientosapls h5 {
+  font-style: italic;
+}
+
+.badge-conocimientosapls .bc-item {
+  display: inline-block;
+  font-weight:600;
+  font-size: 1.25rem;
+  padding: 0.5em 1.2em;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.5625;
+  cursor: default;
+  user-select: none;
+  margin-bottom: 0.35rem;
+}
+
+.cuadro-experiencia {
+  padding: 12px 16px;
+  background: #f9f9f9;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  margin-bottom: 5rem;
+  border-radius: 8px;
+}
+
+.cuadro-experiencia h1:first,
+.cuadro-experiencia h2:first,
+.cuadro-experiencia h3:first,
+.cuadro-experiencia h4:first,
+.cuadro-experiencia h5:first {
+  border-left: 3px solid #ef6277;
+}
+
+.formacion-timeline .reconocimientos .row div:not(.card-header) {
+  border-radius: 9px;
+}
+.formacion-timeline .reconocimientos .row .card-header {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.section-content.contactame .row div {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
