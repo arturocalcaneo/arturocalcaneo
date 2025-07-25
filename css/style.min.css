@@ -28,22 +28,6 @@ body {
     background: #f12711;
     background: -webkit-linear-gradient(to right, #f5af19, #f3301b);
     background: linear-gradient(to right, #f5af19, #f3301b);
-
-    /*background: #bdc3c7;
-    background: -webkit-linear-gradient(to right, #bdc3c7, #2c3e50);
-    background: linear-gradient(to right, #bdc3c7, #2c3e50);*/
-
-    /*background: #2c3e50;
-    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);
-    background: linear-gradient(to right, #3498db, #2c3e50);*/
-
-    /*background: #667eea;
-    background: -webkit-linear-gradient(to right, #667eea, #764ba2);
-    background: linear-gradient(to right, #667eea, #764ba2);*/
-
-    /*background: #C9CCD3;
-    background: -webkit-linear-gradient(to right, #C9CCD3, #E2E2E2);
-    background: linear-gradient(to right, #C9CCD3, #E2E2E2);*/
   }
 
 .boxed-page {
@@ -510,7 +494,7 @@ footer {
 
 .card-body {
   position: relative;
-  padding-bottom: 2.75rem;
+  padding-bottom: 0;
 }
 
 .card-body .card-link {
@@ -593,15 +577,38 @@ footer {
   border-left: 3px solid #ef6277;
 }
 
-.formacion-timeline .reconocimientos .row div:not(.card-header) {
+.formacion-timeline .reconocimientos .row .card:not(.card-header),
+.formacion-timeline .reconocimientos .row .card:not(.card-footer) {
   border-radius: 9px;
 }
-.formacion-timeline .reconocimientos .row .card-header {
+.formacion-timeline .reconocimientos .row .card > .card-header {
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
+}.formacion-timeline .reconocimientos .row .card > .card-footer {
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.formacion-timeline .reconocimientos .row .card > .card-body {
+
 }
 
 .section-content.contactame .row div {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+#gtco-evaluaciones-tecnicas #num {
+  background: #f33b1b;
+  color: white;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  border-radius: 50%;
+  font-size: 5.5rem;
+}
+
+#gtco-evaluaciones-tecnicas #enlace {
+  padding-left: 1.5rem;
+  font-weight: 600;
+  font-size: 2rem;
 }
