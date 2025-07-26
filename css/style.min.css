@@ -615,10 +615,14 @@ footer {
 
 .lightcase-icon-download{
   color: rgba(255, 255, 255, 0.6) !important;
-  margin-right: 1.5em !important;
+  margin-right: 1.45em !important;
 }
 
 .noBefore::before {
   content: none !important;
   display: none !important;
+}
+
+.btn.btn-danger.btn-block[type="submit"]:hover {
+  color: #f3f3f3 !important;
 }
