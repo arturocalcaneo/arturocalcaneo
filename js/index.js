@@ -117,4 +117,24 @@ $(document).ready(function(){
                 }
             });
     }
+
+    // Botón HTML no visible que permite descargar documentos
+    const enlace = document.getElementsByClassName('lightcase-icon-download')[0];
+
+    // Agrega botón de descarga al abrir Lightcase de un documento
+    $('.img-pop.documento').click(function(event) { 
+        // Agrega la ruta del documento a descargar       
+        $(enlace).attr('href', $(this).attr('href'));
+        // Muestra el botón descargar cuando se visualiza un documento de reconocimiento o constancia
+        enlace.style.display= 'block';
+    });
+
+    $('body').on('click', function(e){
+        // Detecta si el click fue en elementos de cierre del lightbox (botón cerrar o overlay)
+        if( e.target.classList.contains('lightcase-icon-close') || e.target.id == 'lightcase-overlay'){
+            // Oculta el enlace y elimina su funcionalidad
+            enlace.style.display = 'none';
+            enlace.removeAttribute('href');
+        }
+    });
 });
