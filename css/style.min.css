@@ -527,10 +527,14 @@ footer {
 }
 
 #gtco-general-knowledge .row .d-flex {
-  background: #f9f9f9;
+  background: #f6f6f6;
   border: 1px solid #f1f1f1;
   border-radius: 12px;
-  padding: 1.5rem;
+  
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: .35rem;
+  padding-right: .35rem;
 }
 
 .badge-conocimientosapls {
@@ -587,10 +591,6 @@ footer {
 }.formacion-timeline .reconocimientos .row .card > .card-footer {
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
-}
-
-.formacion-timeline .reconocimientos .row .card > .card-body {
-
 }
 
 .section-content.contactame .row div {
