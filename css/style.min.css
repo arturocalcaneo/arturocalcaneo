@@ -626,3 +626,25 @@ footer {
 .btn.btn-danger.btn-block[type="submit"]:hover {
   color: #f3f3f3 !important;
 }
+
+.portfolio-holder .filter-button-group a{
+  border:1px solid #f96b808f;
+  background: #f15e740a;
+  border-radius: 3px;
+  padding: .55rem;
+  padding-left: 1.15rem;
+  padding-right: 1.15rem;
+  white-space: nowrap;
+  transition: .1s;
+}
+
+.portfolio-holder .filter-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+}
+
+.portfolio-holder .filter-button-group a:hover {
+  background: #f15e7417;
+}
