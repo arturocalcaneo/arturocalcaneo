@@ -600,10 +600,36 @@
                         </div>
                         
                         <div class="alert alert-light mt-5" role="alert">
-                            <a href="Talentview3D_arturocalcaneo.pdf" download="Talentview3D_arturocalcaneo.pdf" target="_blank" rel="noopener noreferrer" type="application/pdf">
+                            <a href="Talentview3D_arturocalcaneo.pdf" id="descargar-pdf-talentview3d" download="Talentview3D_arturocalcaneo.pdf" target="_blank" rel="noopener noreferrer" type="application/pdf">
                                 <i class="lnr lnr-download mr-2"></i>
-                                Descargar evaluación TalentView 3D (PDF)
+                                <span>Descargar evaluación TalentView 3D (PDF)</span>
                             </a>
+
+                            <script>
+                                function isSafariOrOpera() {
+                                    const userAgent = navigator.userAgent;
+                                    const vendor = navigator.vendor;
+                                    
+                                    // Detectar Safari
+                                    const isSafari = vendor && vendor.indexOf('Apple') > -1 && 
+                                                    userAgent && userAgent.indexOf('CriOS') === -1 && 
+                                                    userAgent.indexOf('FxiOS') === -1;
+                                    
+                                    // Detectar Opera (versiones modernas y clásicas)
+                                    const isOpera = (userAgent.indexOf('Opera') > -1 || 
+                                                    userAgent.indexOf('OPR') > -1 || 
+                                                    userAgent.indexOf('OPiOS') > -1);
+                                    
+                                    return isSafari || isOpera;
+                                }
+
+                                if(isSafariOrOpera()){
+                                    let talenViewLinkSpan = document.querySelector('#descargar-pdf-talentview3d > span');
+                                    if(talenViewLinkSpan){
+                                        talenViewLinkSpan.innerHTML= 'Ver evaluación TalentView 3D (PDF)';
+                                    }
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>
