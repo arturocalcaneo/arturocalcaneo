@@ -602,7 +602,7 @@
                             <div class="col-md-4"></div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 mb-4">
                                 <img class="img-fluid d-block" src="img/diagrama_competencias.png" alt="Diagrama TalentView3D"/>
                             </div>
                             <div class="col-md-6 d-flex justify-content-center align-items-center">
@@ -635,9 +635,9 @@
                                     }
 
                                     if(isSafariOrOpera()){
-                                        let talenViewLinkSpan = document.querySelector('#descargar-pdf-talentview3d > span');
+                                        let talenViewLinkSpan = document.querySelector('#descargar-pdf-talentview3d > span:nth-child(2)');
                                         if(talenViewLinkSpan){
-                                            talenViewLinkSpan.innerHTML= 'Ver evaluación TalentView 3D (PDF)';
+                                            talenViewLinkSpan.innerText = 'Ver evaluación TalentView 3D (PDF)';
                                         }
                                     }
                                 </script>
