@@ -648,3 +648,14 @@ footer {
 .portfolio-holder .filter-button-group a:hover {
   background: #f15e7417;
 }
+
+.pdf-talentview3d{
+  border-radius: 9px;
+  border-color:#f15e65c4;
+  border-width: 2px;
+  background: #f15e680b;
+}
+
+.portfolio-item {
+  border-radius: 6px !important;
+}
